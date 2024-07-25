@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databases 101</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/79621c61c0.js" crossorigin="anonymous"></script>
+    <style>
+ body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode{
+    background-color: #FAF0E6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+body.dark-mode header{
+    background-color: #D3D3D3;
+    color: #333;
+}
+body.dark-mode header .darkmode{
+    background-color: #D3D3D3;
+    color: #FFA500;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-left: 20px;
+    max-width: 50px;
+
+}
+.darkmode{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    max-width: 50px;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 0.3px;
+    color: #D3D3D3;
+}
+main h1{
+    text-align: center;
+}
+.blog{
+    max-width: 700px;
+}
+
+body.dark-mode main{
+    color: black;
+}
+span{
+    color: #FFA500;
+}
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+.social-icons{
+    font-size: 20px;
+
+    
+}
+.social-icons i{
+    margin: 5px;
+    transition: transform 0.5s;
+}
+.social-icons i:hover{
+    transform: translateY(-5px);
+    color: #FFA500;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Database 101!</h1>
+        <a href="index.html"><button class="home"><i class="fa-solid fa-house"></i></button></a>
+        <button onclick="darkmode()" class="darkmode"><i class="fa-regular fa-moon"></i></button>
+    </header>
+    <main>
+        <div class="blog">
+            <h1>Database 101</h1>
+            <div class="social-icons">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i> 
+                <i class="fa-brands fa-facebook"></i> 
+                <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <br>
+            <span>Written by ChatGPT</span>
+            <br>
+            <span>21/7/24</span>
+            <br>
+            <p>
+
+                Databases 101: An Introduction to Data Management
+                <br>
+                <br>
+                In the digital age, databases play a crucial role in storing and managing data efficiently. They are designed to handle large volumes of information in a structured way, enabling quick retrieval and manipulation. At their core, databases organize data into tables, rows, and columns, providing a systematic approach to manage everything from user information and transaction records to complex business data. Understanding the fundamentals of databases is essential for anyone involved in software development, data analysis, or IT management.
+                <br>
+                <br>
+                Relational vs. Non-Relational Databases
+                <br>
+                <br>
+                Databases are primarily categorized into two types: relational and non-relational. Relational databases, such as MySQL, PostgreSQL, and Oracle, use a structured schema and SQL (Structured Query Language) to manage and query data. They excel at handling structured data with defined relationships between tables. In contrast, non-relational databases, like MongoDB and Cassandra, offer greater flexibility by storing data in formats such as key-value pairs, documents, or graphs. They are ideal for unstructured or semi-structured data and can scale horizontally to handle large amounts of data across distributed systems.
+                <br>
+                <br>
+                <img src="https://www.pearsonitcertification.com/content/images/chap4_9780135853290/elementLinks/04fig04_alt.jpg">
+                <br>
+                <br>
+                Database Design and Normalization
+                <br>
+                <br>
+                Effective database design is fundamental for optimizing performance and ensuring data integrity. One key aspect is normalization, which involves organizing data to reduce redundancy and improve efficiency. This process breaks down data into related tables and establishes relationships through keys. Proper normalization minimizes data duplication and ensures consistency, making it easier to manage and update information. However, it's important to balance normalization with practical considerations to avoid overly complex database structures that may hinder performance.
+                <br>
+                <br>
+                Querying and Indexing
+                <br>
+                <br>
+                Querying is the process of retrieving data from a database using specific commands or queries. SQL is the standard language for querying relational databases, allowing users to perform operations such as SELECT, INSERT, UPDATE, and DELETE. Indexing is another crucial aspect of database management, as it enhances query performance by creating pointers to data. Indexes speed up data retrieval but can slow down write operations, so it's important to design indexes strategically based on query patterns and performance needs.
+                <br>
+                <br>
+                Database Security and Backup
+                <br>
+                <br>
+                Security and backup are vital components of database management. Protecting sensitive data from unauthorized access and ensuring data availability are top priorities. Implementing robust security measures, such as encryption, access controls, and regular audits, helps safeguard database information. Additionally, regular backups are essential for data recovery in case of hardware failures, data corruption, or accidental deletions. A well-defined backup strategy ensures that data can be restored promptly and minimizes the risk of data loss.
+                <br>
+                <br>
+            </p>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

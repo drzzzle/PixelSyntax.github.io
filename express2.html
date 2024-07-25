@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express.js - 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/79621c61c0.js" crossorigin="anonymous"></script>
+    <style>
+ body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode{
+    background-color: #FAF0E6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+body.dark-mode header{
+    background-color: #D3D3D3;
+    color: #333;
+}
+body.dark-mode header .darkmode{
+    background-color: #D3D3D3;
+    color: #FFA500;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-left: 20px;
+    max-width: 50px;
+
+}
+.darkmode{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    max-width: 50px;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 0.3px;
+    color: #D3D3D3;
+}
+main h1{
+    text-align: center;
+}
+.blog{
+    max-width: 700px;
+}
+
+body.dark-mode main{
+    color: black;
+}
+span{
+    color: #FFA500;
+}
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+.social-icons{
+    font-size: 20px;
+
+    
+}
+.social-icons i{
+    margin: 5px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.social-icons i:hover{
+    transform: translateY(-5px);
+    color: #FFA500;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Express.js - 1</h1>
+        <a href="index.html"><button class="home"><i class="fa-solid fa-house"></i></button></a>
+        <button onclick="darkmode()" class="darkmode"><i class="fa-regular fa-moon"></i></button>
+    </header>
+    <main>
+        <div class="blog">
+            <h1>Express.js - 1</h1>
+            <div class="social-icons">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i> 
+                <i class="fa-brands fa-facebook"></i> 
+                <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <br>
+            <span>Written by Danesh Udachia</span>
+
+            <br>
+            <span>22/7/24</span>
+            <br>
+            <p>
+                Express.JS 1
+                <br>
+                <br>
+                Summary
+                <br>
+                <br>
+                
+                This is the second installment of this series in which I learn express.js. After watching about two Youtube Videos, both from <a href="https://www.youtube.com/@WebDevSimplified">Web Dev Simplified</a>, I have been able to gain a shallow grasp on the framework and how it works and how I can use it, I have made a server
+                , made a route or two, and I have somewhat gained a grasp on how some of it works. This doesn't mean, I'm experienced or comfortable in it, by any means, but still, I have something.
+                <br>
+                <br>
+                Resources
+                <br>
+                <br>
+                The resources I have used so far, have only been Web Dev Simplified's Youtube video on <a href="https://www.youtube.com/watch?v=SccSCuHhOw0">Express.js crash course</a>, and his <a href="https://www.youtube.com/watch?v=lY6icfhap2o&t=181s">middleware explained video</a>. I have also used a tiny bit of ChatGPT in troubleshooting, but nothing at all major. 
+                <br>
+                <br>
+                <img src="express2.PNG" width="700px">
+                <br>
+                <br>
+                Next Steps
+                <br>
+                <br>
+                Alrighty, after the first installment, I have to say I have my work cut out for me, I have got an abundance of things to learn. I have barely even learnt how to make servers and how to use routes, let alone what is middleware and how to use it.
+                In the next steps, I hope to finally be able to confidentally make a server, set up some routes and understand and use basic Middleware while also being able to understand and solifidy the things I have already learnt.
+            </p>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

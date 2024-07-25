@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Express.js</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/79621c61c0.js" crossorigin="anonymous"></script>
+    <style>
+ body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode{
+    background-color: #FAF0E6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+body.dark-mode header{
+    background-color: #D3D3D3;
+    color: #333;
+}
+body.dark-mode header .darkmode{
+    background-color: #D3D3D3;
+    color: #FFA500;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-left: 20px;
+    max-width: 50px;
+
+}
+.darkmode{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    max-width: 50px;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 0.3px;
+    color: #D3D3D3;
+}
+main h1{
+    text-align: center;
+}
+.blog{
+    max-width: 700px;
+}
+
+body.dark-mode main{
+    color: black;
+}
+span{
+    color: #FFA500;
+}
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+.social-icons{
+    font-size: 20px;
+
+    
+}
+.social-icons i{
+    margin: 5px;
+    transition: transform 0.5s;
+}
+.social-icons i:hover{
+    transform: translateY(-5px);
+    color: #FFA500;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Intro to Express.js!</h1>
+        <a href="index.html"><button class="home"><i class="fa-solid fa-house"></i></button></a>
+        <button onclick="darkmode()" class="darkmode"><i class="fa-regular fa-moon"></i></button>
+    </header>
+    <main>
+        <div class="blog">
+            <h1>Introduction to Express.js</h1>
+            <div class="social-icons">
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-github"></i> 
+            <i class="fa-brands fa-facebook"></i> 
+            <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <br>
+            <span>Written by ChatGPT</span>
+            <br>
+            <span>21/7/24</span>
+            <br>
+            
+            <p>
+
+Express.js is a minimalist and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. For new developers, Express.js offers an accessible way to build server-side applications with JavaScript, making it a valuable tool in a developer’s toolkit. Its simplicity, coupled with its powerful features, helps beginners quickly grasp the fundamentals of web development and start creating functional web applications.
+Easy Learning Curve
+<br>
+<br>
+One of the primary reasons Express.js is ideal for new developers is its easy learning curve. Since Express.js is built on top of Node.js, developers who are already familiar with JavaScript can quickly get up to speed. The framework's straightforward syntax and unopinionated nature allow developers to experiment and learn without being overwhelmed by complex configurations or conventions. This ease of use encourages experimentation and hands-on learning, which is crucial for beginners.
+Comprehensive Documentation and Community Support
+<br>
+<br>
+Express.js boasts comprehensive <a href="https://expressjs.com/">documentation</a> and a vibrant community. The <a href="https://expressjs.com/">documentation</a> is clear, well-organized, and filled with examples that help new developers understand how to implement various features. Additionally, the large community means that there are plenty of tutorials, forums, and Stack Overflow discussions available. This wealth of resources ensures that beginners can find help and guidance when they encounter challenges, making the learning process smoother and less daunting.
+Middleware and Modular Architecture
+</p>
+<br>
+<br>
+<img src="https://woz-u.com/wp-content/uploads/2022/06/Evolution-of-Coding-scaled.jpg" width="700px" height="600px">
+<br>
+<p>
+Express.js introduces the concept of middleware, which are functions that execute during the request-response cycle. This modular approach allows new developers to build scalable and maintainable applications by breaking down functionality into smaller, reusable components. Middleware functions can handle tasks like parsing request bodies, logging, authentication, and more. This modularity not only simplifies the development process but also teaches beginners the importance of writing clean, maintainable code.
+Integration with Other Technologies
+<br>
+<br>
+Express.js seamlessly integrates with various other technologies, making it a versatile choice for new developers looking to expand their skills. For instance, Express can be easily paired with MongoDB for database operations, Socket.io for real-time communication, or various templating engines like Pug or EJS for dynamic HTML rendering. This flexibility allows beginners to experiment with different tech stacks and gain a broader understanding of web development as a whole, preparing them for more advanced projects in the future.
+Conclusion
+<br>
+<br>
+In summary, Express.js is an excellent framework for new developers due to its simplicity, comprehensive documentation, supportive community, modular architecture, and seamless integration with other technologies. By leveraging Express.js, beginners can quickly build and deploy web applications, gain confidence in their programming skills, and lay a strong foundation for their future careers in web development. The framework’s ability to simplify complex tasks while providing a robust platform for experimentation makes it an invaluable resource for any aspiring developer.
+            </p>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

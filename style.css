@@ -1,0 +1,150 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode{
+    background-color: #FDF5E6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+body.dark-mode header{
+    background-color: #D3D3D3;
+    color: #333;
+}
+header button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+body.dark-mode header button{
+    background-color: #D3D3D3;
+    color: #FFA500;
+}
+main {
+    padding: 20px;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 30px;
+    transition: transform 0.5s;
+}
+body.dark-mode .welcome{
+    background-color: #D3D3D3;
+}
+
+.intro-text{
+    margin-right: 200px;
+    color: #F2EDEB;
+
+}
+body.dark-mode .intro-text{
+    color: #333;
+}
+.intro-text button{
+background-color: #FFA500;
+color: #F2EDEB;
+font-size: 20px;
+padding: 15px;
+border: 1px solid transparent;
+border-radius: 9px;
+font-weight: 600;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+margin-top: 60px;
+cursor: pointer;
+align-items: center;
+transition: transform 0.5s;
+}
+body.dark-mode .intro-text button{
+    color: #FFA500;
+    background-color: #FFFFF0;
+}
+.intro-img img{
+    border-radius: 15px;
+}
+
+button:hover{
+    transform: translateY(-5px);
+    background-color: #D3D3D3;
+    color: #FFA500;
+}
+body.dark-mode button:hover{
+    background-color: #FFA500;
+    color: #F2EDEB;
+}
+.welcome:hover{
+    transform: translateY(-5px);
+}
+
+article{
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #F2EDEB;
+    border-radius: 15px;
+    margin: 15px;
+    transition: transform 0.5s;
+}
+body.dark-mode article{
+    background-color: #D3D3D3;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+article p{
+    padding: 15px;
+}
+article h3 {
+    padding: 15px;
+    color: #FFA500;
+}
+article img{
+    border-radius: 15px;
+}
+
+#posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Adjusts columns based on container width */
+    gap: 15px; /* Space between articles */
+    margin-top: 50px;
+    overflow: hidden; 
+}
+
+article:hover{
+    transform: translateY(-5px);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+body.dark-mode article a {
+    color:#333
+}

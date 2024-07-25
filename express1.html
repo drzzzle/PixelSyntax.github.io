@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express.js - 0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/79621c61c0.js" crossorigin="anonymous"></script>
+    <style>
+ body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode{
+    background-color: #FAF0E6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+body.dark-mode header{
+    background-color: #D3D3D3;
+    color: #333;
+}
+body.dark-mode header .darkmode{
+    background-color: #D3D3D3;
+    color: #FFA500;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-left: 20px;
+    max-width: 50px;
+
+}
+.darkmode{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    max-width: 50px;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 0.3px;
+    color: #D3D3D3;
+}
+main h1{
+    text-align: center;
+}
+.blog{
+    max-width: 700px;
+}
+
+body.dark-mode main{
+    color: black;
+}
+span{
+    color: #FFA500;
+}
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFA500;
+    color: #F2EDEB;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 28px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+.social-icons{
+    font-size: 20px;
+
+    
+}
+.social-icons i{
+    margin: 5px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.social-icons i:hover{
+    transform: translateY(-5px);
+    color: #FFA500;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Express.js - 0</h1>
+        <a href="index.html"><button class="home"><i class="fa-solid fa-house"></i></button></a>
+        <button onclick="darkmode()" class="darkmode"><i class="fa-regular fa-moon"></i></button>
+    </header>
+    <main>
+        <div class="blog">
+            <h1>Express.js - 0</h1>
+            <div class="social-icons">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i> 
+                <i class="fa-brands fa-facebook"></i> 
+                <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <br>
+            <span>Written by Danesh Udachia</span>
+
+            <br>
+            <span>22/7/24</span>
+            <br>
+            <p>
+                Express.JS 0
+                <br>
+                <br>
+                This is the first installment, to my Express.JS journey, throughout this, I will learn more Express.Js and enough to be able to completely build a full-stack application. This is the first episode, episode 0,
+                no coding is involved in this step, only research, I will be able to gather resources, from everywhere possible to construct these projects.
+                <br>
+                <br>
+                Resources
+                <br>
+                <br>
+                The resources that I will be using throughout this project include things like ChatGPT, as my main assistant as to give me guidance and help me troubleshoot. As well I will be usisng other resources such as the official Express.JS <a href="https://expressjs.com/en/starter/hello-world.html">documentation</a>
+                , this documentation is well known for being some of the best documentation needed for programming. My final resource will be Youtube, I will use Youtube to understand the fundamentals, setting up a server etc. I will also be using to find and use 
+                example projects to build.
+                <br>
+                <br>
+                <img src="https://cdn.prod.website-files.com/5e0f1144930a8bc8aace526c/663c74f5345f9956f284093e_expressjs.com-4ed5922eb818b953fc6e20d667e67b46.jpeg" width="700px">
+                <br>
+                <br>
+                The End Goal
+                <br>
+                <br>
+                My end goal in this entire project is too be somewhat comfortable in Express.JS and be able to build servers and full stack applications such as a social media app, in which I can use databases and servers to run the app off of. I am hoping to have 
+                finished a majority of this journey by the end of the year but I am not going to rush it.
+            </p>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
